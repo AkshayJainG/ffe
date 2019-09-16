@@ -8,6 +8,6 @@ To use:
 
 2. modify the agent.js to monitor the functions you need
 
-2.b. adjust accordingly in the pyFrida.py script
+    2.b. adjust accordingly in the pyFrida.py script
 
 3. python pyFrida.py
