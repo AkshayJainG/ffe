@@ -31,7 +31,7 @@ def main():
     # os.system('nox_adb shell "am start -n com.package/com.YourMainActivity"')
     time.sleep(6)
     os.system('frida -U com.package -l agent.js --no-pause')
-    # os.system('frida -U com.package:<<childprocess>> -l agent.js --no-pause') # sometimes we need to hook child processes (do ps -aux | grep YourApp)
+    # os.system('frida -U com.package:<<childprocess>> -l agent.js --no-pause') # sometimes we need to hook child processes (do ps | grep YourApp)
 
 if __name__ == "__main__":
     main()
