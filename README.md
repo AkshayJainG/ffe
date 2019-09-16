@@ -10,4 +10,4 @@ To use:
 
     2.b. adjust accordingly in the pyFrida.py script
 
-3. python pyFrida.py
+3. python pyFrida.py (or just: frida -U com.package -l agent.js --no-pause)
