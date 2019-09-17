@@ -20,8 +20,8 @@ def main():
         return
 
     while(args.prepare):
-        # os.system('start /B nox.exe')
-        # os.system('nox_adb wait-for-device install app-debug.apk')
+        os.system('start /B nox.exe')
+        os.system('nox_adb wait-for-device install app-debug.apk')
         os.system('nox_adb push <<frida-server>> /data/local/tmp/')
         os.system('nox_adb shell "chmod 777 /data/local/tmp/<<frida-server>>"')
         return
