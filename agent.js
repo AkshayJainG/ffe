@@ -52,10 +52,10 @@ function monitorFunction(package_name, class_name, func_name, func_args) {
                             console.log(package_name + '.' + class_name)
                             var args = [].slice.call(arguments);
                             // PoC modify data on the fly
-                            if (args[1]) { // say i want to modify the second argument only
-                                args[1] = args[1].replace(/someregex/,'withMe').replace(/anotherRegex/,'withThat')
-                                console.log('\x1b[31m'+args[1]+'\x1b[0m')
-                            }
+                            //if (args[1]) { // say i want to modify the second argument only
+                            //    args[1] = args[1].replace(/someregex/,'withMe').replace(/anotherRegex/,'withThat')
+                            //    console.log('\x1b[31m'+args[1]+'\x1b[0m')
+                            //}
 
                             var result = this[func_name].apply(this, args);
                             if (result != undefined) {
