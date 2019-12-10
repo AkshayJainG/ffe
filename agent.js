@@ -148,7 +148,7 @@ function monitorAllClasses(filterString) {
 
 if (Java.available) {
     Java.perform(function () {
-        //Your options:
+        // Your options:
         // monitorFunction('com.package','Class','Func')
         // monitorClass('com.package','Class')
         // monitorAllClasses('AnyString')
