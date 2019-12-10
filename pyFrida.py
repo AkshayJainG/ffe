@@ -20,6 +20,7 @@ def main():
         return
 
     while(args.prepare):
+        # don't forget to replace <<frida-server>>
         os.system('start /B nox.exe')
         os.system('nox_adb wait-for-device install app-debug.apk')
         os.system('nox_adb push <<frida-server>> /data/local/tmp/')
